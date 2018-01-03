@@ -1,0 +1,8 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "version": "1.4.0",
+    "libraryName": "test-custom-element",
+    "libraryId": "56cef034-6cc7-49cf-9e37-40fa00452476",
+    "environment": "spo"
+  }
+}
