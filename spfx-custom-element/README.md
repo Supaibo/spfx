@@ -1,4 +1,4 @@
-## test-custom-element
+## spfx-custom-element
 
 This is where you include your WebPart documentation.
 
