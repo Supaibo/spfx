@@ -24,6 +24,11 @@ This package produces the following:
 * dist/* - the bundled script, along with other resources
 * deploy/* - all resources which should be uploaded to a CDN.
 
+### Next Steps
+I will use this boilerplate to make a component to create/manage the modern themes.
+
+See ya !
+
 ### References
 * https://developer.mozilla.org/en-US/docs/Web/Web_Components/Custom_Elements
 * https://developers.google.com/web/fundamentals/web-components/customelements
