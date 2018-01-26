@@ -1,14 +1,21 @@
-## spfx-custom-element
+# SPFx-custom-element
 
-This is where you include your WebPart documentation.
+A SPFx boilerplate project based on native web elements like :
+* Custom Element
+* Shadow Dom
+
+This project shows you how to use the native JavaScript to create web components.
+There is two controls (SampleImage & WelcomeSharePoint).
+
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "The sample component")
 
 ### Building the code
 
 ```bash
-git clone the repo
+git clone https://github.com/Supaibo/spfx.git
 npm i
 npm i -g gulp
-gulp
+gulp serve
 ```
 
 This package produces the following:
@@ -17,14 +24,8 @@ This package produces the following:
 * dist/* - the bundled script, along with other resources
 * deploy/* - all resources which should be uploaded to a CDN.
 
-### Build options
-
-gulp clean - TODO
-gulp test - TODO
-gulp serve - TODO
-gulp bundle - TODO
-gulp package-solution - TODO
-
-
-https://medium.com/@WebReflection/js-dom-data-bindings-in-2017-1545f38cfdc8
-https://github.com/WebReflection/wrist
+### References
+* https://developer.mozilla.org/en-US/docs/Web/Web_Components/Custom_Elements
+* https://developers.google.com/web/fundamentals/web-components/customelements
+* https://www.youtube.com/watch?v=iVJA-lGkEFw
+* https://github.com/SharePoint/sp-dev-docs/blob/master/docs/spfx/toolchain/integrate-gulp-tasks-in-build-pipeline.md
