@@ -1,7 +1,7 @@
 @import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
 
-:global sample-product:host {
-    :global .product-img {
+:global sample-image:host {
+    :global .sample-img {
         width: 150px;
         height: 150px;
     }

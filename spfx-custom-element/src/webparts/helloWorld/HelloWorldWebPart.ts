@@ -6,12 +6,13 @@ import {
   PropertyPaneTextField
 } from '@microsoft/sp-webpart-base';
 import { escape } from '@microsoft/sp-lodash-subset';
-import { XProduct } from '../../elements/product/product.module';
+
+import { SampleImage } from '../../elements/product/sampleImage.module';
 import { WelcomeSharePoint } from '../../elements/welcome/welcome.module';
+import { Utils } from '../../lib/utils';
 
 export interface IHelloWorldWebPartProps {
   description: string;
-  targetProperty: string;
 }
 
 export default class HelloWorldWebPart extends BaseClientSideWebPart<IHelloWorldWebPartProps> {
@@ -19,21 +20,17 @@ export default class HelloWorldWebPart extends BaseClientSideWebPart<IHelloWorld
     super();
 
     // Define the new element
-    if (!this.elementIsRegistered('sample-product'))
-      window.customElements.define('sample-product', XProduct);
+    if (!Utils.elementIsRegistered(SampleImage.moduleName))
+      window.customElements.define(SampleImage.moduleName, SampleImage);
 
-    if (!this.elementIsRegistered('welcome-sharepoint'))
-      window.customElements.define('welcome-sharepoint', WelcomeSharePoint);
+    if (!Utils.elementIsRegistered(WelcomeSharePoint.moduleName))
+      window.customElements.define(WelcomeSharePoint.moduleName, WelcomeSharePoint);
   }
 
   public render(): void {
     this.domElement.innerHTML = `<welcome-sharepoint class="welcome-sharepoint" />`;
   }
-
-  private elementIsRegistered(value): boolean {
-    return window.customElements.get(value) ? true : false;
-  }
-
+  
   protected get dataVersion(): Version {
     return Version.parse('1.0');
   }
@@ -51,9 +48,6 @@ export default class HelloWorldWebPart extends BaseClientSideWebPart<IHelloWorld
               groupFields: [
                 PropertyPaneTextField('description', {
                   label: "Description"
-                }),
-                PropertyPaneTextField('targetProperty', {
-                  label: "Target Property"
                 })
               ]
             }

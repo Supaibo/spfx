@@ -24,3 +24,7 @@ gulp test - TODO
 gulp serve - TODO
 gulp bundle - TODO
 gulp package-solution - TODO
+
+
+https://medium.com/@WebReflection/js-dom-data-bindings-in-2017-1545f38cfdc8
+https://github.com/WebReflection/wrist
