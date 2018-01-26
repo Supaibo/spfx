@@ -7,7 +7,7 @@ A SPFx boilerplate project based on native web elements like :
 This project shows you how to use the native JavaScript to create web components.
 There is two controls (SampleImage & WelcomeSharePoint).
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "The sample component")
+![alt text](https://github.com/Supaibo/spfx/blob/master/spfx-custom-element/Screenshot.png?raw=true "The sample component")
 
 ### Building the code
 
